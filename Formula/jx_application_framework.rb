@@ -1,11 +1,11 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 
-class JXApplicationFramework < Formula
+class JxApplicationFramework < Formula
   desc "JX is a C++ application framework and widget library (SDK) for use with the X Window System."
   homepage "https://github.com/jafl/jx_application_framework.git"
   license "LGPL"
-  head "https://github.com/jafl/jx_application_framework.git", branch "utf8"
+  head "https://github.com/jafl/jx_application_framework.git", branch: "utf8"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
