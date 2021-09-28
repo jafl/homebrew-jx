@@ -1,4 +1,4 @@
-# Jafl Jx
+# JX Applications
 
 ## How do I install these formulae?
 
