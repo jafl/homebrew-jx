@@ -4,13 +4,11 @@ class JxApplicationFramework < Formula
   license "LGPL-2.1-or-later"
   head "https://github.com/jafl/jx_application_framework.git", branch: "utf8"
 
-  depends_on "coreutils"  => :build
   depends_on "pkg-config" => :build
   depends_on "ace"        => :build
   depends_on "icu4c"      => :build
   depends_on "pcre"       => :build
   depends_on "re-flex"    => :build
-  depends_on "bison"      => :build
   depends_on "gd"         => :build
   depends_on "libx11"     => :build
   depends_on "libxft"     => :build

@@ -4,7 +4,7 @@ class SystemG < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/jafl/system-g.git", branch: "main"
 
-  depends_on "jx-application-framework"
+  depends_on "jx-application-framework" => :build
   depends_on "git-gui"
 
   def install
