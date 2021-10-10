@@ -8,13 +8,19 @@ class JxApplicationFramework < Formula
   depends_on "icu4c"
   depends_on "pcre"
   depends_on "re-flex"
+  depends_on "bison"
+  depends_on "aspell"
   depends_on "gd"
   depends_on "pkg-config"
+  depends_on "libx11"
+  depends_on "libxft"
+  depends_on "libxpm"
+  depends_on "freetype"
 
   def install
     ENV.deparallelize
     system "./configure", "release"
-    system "make", "JX_INSTALL_ROOT=#{prefix}"
+    system "make", "JX_INSTALL_ROOT=#{prefix}", "default", "install"
   end
 
   test do
