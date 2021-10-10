@@ -10,6 +10,7 @@ class SystemG < Formula
   def install
     ENV.deparallelize
     system "./configure", "release"
+    system "makemake"
     system "make", "JX_INSTALL_ROOT=#{prefix}", "default", "install"
   end
 
