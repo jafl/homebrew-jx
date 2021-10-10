@@ -16,7 +16,7 @@ class JxApplicationFramework < Formula
   depends_on "libxft"     => :build
   depends_on "libxpm"     => :build
   depends_on "freetype"   => :build
-  depends_on "aspell"     => :test
+  depends_on "aspell"     => :build
 
   def install
     ENV.deparallelize
