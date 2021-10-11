@@ -8,10 +8,10 @@ class SystemG < Formula
   depends_on "git-gui"
 
   def install
-    ENV.deparallelize
     system "./configure", "release"
     system "makemake"
-    system "make", "JX_INSTALL_ROOT=#{prefix}", "default", "install"
+    system "make"
+    system "make", "JX_INSTALL_ROOT=#{prefix}", "install"
   end
 
   test do
