@@ -18,6 +18,7 @@ class JxApplicationFramework < Formula
 
   def install
     ENV.deparallelize
+    system "env"
     system "./configure", "release"
     system "make", "JX_INSTALL_ROOT=#{prefix}", "default", "install"
   end

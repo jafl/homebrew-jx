@@ -4,10 +4,17 @@ class SystemG < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/jafl/system-g.git", branch: "main"
 
+  # need to explicitly depend on icu4c and freetype to keep their paths in -I
+
+  depends_on "coreutils" => :build
   depends_on "jx-application-framework" => :build
+  depends_on "icu4c" => :build
+  depends_on "freetype" => :build
   depends_on "git-gui"
 
   def install
+    ENV.deparallelize
+    system "env"
     system "./configure", "release"
     system "makemake"
     system "make"
