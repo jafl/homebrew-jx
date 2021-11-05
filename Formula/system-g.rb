@@ -14,6 +14,8 @@ class SystemG < Formula
 
   def install
     ENV.deparallelize
+    # remove tcl-tk path which contains private X11 header files
+    ENV["HOMEBREW_INCLUDE_PATHS"]="/usr/local/opt/icu4c/include"
     system "env"
     system "./configure", "release"
     system "makemake"
@@ -22,6 +24,6 @@ class SystemG < Formula
   end
 
   test do
-    system "true"
+    system bin/"systemg", "--version"
   end
 end
