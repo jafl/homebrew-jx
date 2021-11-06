@@ -3,7 +3,7 @@ class NpsSshAskpass < Formula
   homepage "https://github.com/jafl/ssh-askpass"
   version "1.2.0"
   url "https://github.com/jafl/ssh-askpass/releases/download/v1.2.0/nps-ssh-askpass_1.2.0_darwin.tar.gz"
-  sha256 "42308d45b17cbcf1d776c979d8a79bade451a77df9bd2a6f430c0f5c61d008e4"
+  sha256 "605fc3eaa9ff1c41a6a2e087a9416e696a5b34a86c83f09675e62965a9af85b0"
   license "GPL-3.0-or-later"
 
   def install

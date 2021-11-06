@@ -3,7 +3,7 @@ class Drakon < Formula
   homepage "https://github.com/jafl/drakon"
   version "2.0.0"
   url "https://github.com/jafl/drakon/releases/download/v2.0.0/drakon_2.0.0_darwin.tar.gz"
-  sha256 "a3a2e3670372fbd85cf9d6651cc80d35890b8970d9c50398a3d86a0d7e008049"
+  sha256 "ce0be1182aaf1b6ed3e0f112a9228bedcab1f76e6dd3ac2e95d5dce8e19c37c7"
   license "GPL-3.0-or-later"
 
   def install

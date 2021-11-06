@@ -3,10 +3,10 @@ class SystemG < Formula
   homepage "https://github.com/jafl/system-g"
   version "3.0.0"
   url "https://github.com/jafl/system-g/releases/download/v3.0.0/systemg_3.0.0_darwin.tar.gz"
-  sha256 "295075de2cad15258e4f776d993f9cfcb2c82980f0600cc9b2969f956013f112"
+  sha256 "41899e9a2dbd8f0e24f754778ec5753f821459abc6ce3005f80c217eda693af6"
   license "GPL-3.0-or-later"
 
-  depends_on "git-gui"
+  depends_on "git-gui" => :recommended
 
   def install
     # We have to link to XQuartz libraries, but homebrew build environment prohibits this.
