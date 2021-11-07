@@ -2,8 +2,8 @@ class CodeMedic < Formula
   desc "Code Medic is a graphical debugging environment for UNIX that works with gdb, lldb, and Xdebug."
   homepage "https://github.com/jafl/jx-ide"
   version "7.0.0"
-  url "https://github.com/jafl/jx-ide/releases/download/v7.0.0/code_medic_5.0.1_darwin.tar.gz"
-  sha256 "59cc5f3c5ac672e244508a19cdc1856173afedd78f8f0e2649222f63cd377b00"
+  url "https://github.com/jafl/jx-ide/releases/download/v7.0.0/code_medic_7.0.0_darwin.tar.gz"
+  sha256 "575afaf49112f3d1354466a21332c7afd85662936d89da4e291b42710c30ef90"
   license "GPL-3.0-or-later"
 
   def install
