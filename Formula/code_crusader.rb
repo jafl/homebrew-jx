@@ -6,6 +6,9 @@ class CodeCrusader < Formula
   sha256 "c43ddcd3d38cc2e32f0613e9264fb248f8b63e6e8c89dc634211d46dfb8a86d3"
   license "GPL-3.0-or-later"
 
+  depends_on "jafl/jx/code_medic" => :recommended
+  depends_on "jafl/jx/code_mill" => :recommended
+
   def install
     # We have to link to XQuartz libraries, but homebrew build environment prohibits this.
     system "cd *-#{version}; ./install #{prefix}"
