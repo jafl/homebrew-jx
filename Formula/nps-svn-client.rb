@@ -12,6 +12,6 @@ class NpsSvnClient < Formula
   end
 
   test do
-    system bin/"nps_svn_client", "--version"
+    system bin/"nps-svn-client", "--version"
   end
 end
