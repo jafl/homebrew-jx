@@ -1,7 +1,7 @@
 class JxApplicationFramework < Formula
   desc "C++ application framework for use with the X Window System"
-  head "https://github.com/jafl/jx_application_framework.git", branch: "utf8"
   homepage "https://github.com/jafl/jx_application_framework"
+  head "https://github.com/jafl/jx_application_framework.git", branch: "utf8"
   license "LGPL-2.1-or-later"
 
   depends_on "aspell" => :build
