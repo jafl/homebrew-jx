@@ -1,4 +1,4 @@
-class SystemG < Formula
+class Systemg < Formula
   desc "Graphical interface to the file system, similar to Mac OS 7"
   homepage "https://github.com/jafl/system-g"
   url "https://github.com/jafl/system-g/releases/download/v3.0.0/systemg_3.0.0_darwin.tar.gz"
