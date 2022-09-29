@@ -1,8 +1,8 @@
 class CodeMill < Formula
-  desc "Code Mill is a plug-in for Code Crusader.  Code Mill is invoked by selecting one or more classes in the C++ class tree and then choosing the \"Create derived class\" item on the Tree menu."
+  desc "Plug-in for Code Crusader that helps create new C++ classes"
   homepage "https://github.com/jafl/jx-ide"
-  version "7.0.0"
   url "https://github.com/jafl/jx-ide/releases/download/v7.0.0/code_mill_7.0.0_darwin.tar.gz"
+  version "7.0.0"
   sha256 "8250e74feba1708d5cc8285da8ce1eb3d31bd670264448beb99923d8d1cb994b"
   license "GPL-3.0-or-later"
 

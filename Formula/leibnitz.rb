@@ -1,8 +1,8 @@
 class Leibnitz < Formula
-  desc "Leibnitz provides a calculator and the ability to plot functions."
+  desc "Calculator and function plotter"
   homepage "https://github.com/jafl/leibnitz"
-  version "3.0.2"
   url "https://github.com/jafl/leibnitz/releases/download/v3.0.2/leibnitz_3.0.2_macos11_x86_64.tar.gz"
+  version "3.0.2"
   sha256 "c71e9fa2a595321d5e1d9af77e14a5220a0e89696f2f80911717a86b9a95f719"
   license "GPL-3.0-or-later"
 

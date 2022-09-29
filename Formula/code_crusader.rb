@@ -1,8 +1,8 @@
 class CodeCrusader < Formula
-  desc "Code Crusader is a graphical development environment for UNIX."
+  desc "IDE that integrates with Code Medic"
   homepage "https://github.com/jafl/jx-ide"
-  version "7.0.0"
   url "https://github.com/jafl/jx-ide/releases/download/v7.0.0/code_crusader_7.0.0_darwin.tar.gz"
+  version "7.0.0"
   sha256 "c43ddcd3d38cc2e32f0613e9264fb248f8b63e6e8c89dc634211d46dfb8a86d3"
   license "GPL-3.0-or-later"
 
