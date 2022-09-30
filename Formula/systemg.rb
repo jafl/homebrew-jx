@@ -1,8 +1,8 @@
 class Systemg < Formula
   desc "Graphical interface to the file system, similar to Mac OS 7"
   homepage "https://github.com/jafl/system-g"
-  url "https://github.com/jafl/system-g/releases/download/v3.0.0/systemg_3.0.0_darwin.tar.gz"
-  sha256 "41899e9a2dbd8f0e24f754778ec5753f821459abc6ce3005f80c217eda693af6"
+  url "https://github.com/jafl/system-g/releases/download/v3.0.1/systemg_3.0.1_macos11_x86_64.tar.gz"
+  sha256 "b0959c57eb63219ea174f96f617110b6343d81ea3180099319bc1535b0e6540b"
   license "GPL-3.0-or-later"
 
   depends_on "git-gui" => :recommended
