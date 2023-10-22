@@ -1,8 +1,8 @@
 class NpsSshAskpass < Formula
   desc "Does exactly the same job as x11-ssh-askpass, but doesn't require xmkmf"
   homepage "https://github.com/jafl/ssh-askpass"
-  url "https://github.com/jafl/ssh-askpass/releases/download/v1.2.0/nps-ssh-askpass_1.2.0_macos_x86_64.tar.gz"
-  sha256 "958365631201553e824e9ed1f5ad204808dcd5620fff39467a815203eddab83f"
+  url "https://github.com/jafl/ssh-askpass/releases/download/v1.2.1/nps-ssh-askpass_1.2.1_macos13_x86_64.tar.gz"
+  sha256 "12cfd1b3e7cec673853f7792c1fef684c5a9ecb84f799cab2805ff97fe0d6da2"
   license "GPL-3.0-or-later"
 
   def install
