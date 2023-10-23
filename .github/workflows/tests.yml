@@ -34,9 +34,3 @@ jobs:
         continue-on-error: true
 
       - run: brew test-bot --only-formulae
-
-      - name: Upload bottles as artifact
-        uses: actions/upload-artifact@main
-        with:
-          name: bottles
-          path: '*.bottle.*'
