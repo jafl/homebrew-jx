@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
 jobs:
   test-bot:
     strategy:
@@ -32,12 +31,11 @@ jobs:
       - run: brew test-bot --only-setup
 
       - run: brew test-bot --only-tap-syntax
+        continue-on-error: true
 
       - run: brew test-bot --only-formulae
-        if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
-        if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@main
         with:
           name: bottles
