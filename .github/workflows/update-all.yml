@@ -33,7 +33,7 @@ jobs:
               | jq -r '.assets[].browser_download_url' \
               | grep $f \
               | grep macos)
-            curl -sL --output pkg $url
+            curl -sL --output pkg $u
             h=($(shasum -a 256 pkg))
             perl -pi -e 's/url ".*?"/url "'$u'"/' $rb
             perl -pi -e 's/sha256 ".*?"/sha256 "'$h'"/' $rb
