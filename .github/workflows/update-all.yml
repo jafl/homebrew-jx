@@ -28,13 +28,18 @@ jobs:
           for rb in Formula/*; do
             f=${rb##*/}
             f=${f%.rb}
+            echo $f
             r=${map[$f]:-$f}
+            echo $r
             u=$(curl -sL https://api.github.com/repos/jafl/$r/releases/latest \
               | jq -r '.assets[].browser_download_url' \
               | grep $f \
               | grep macos)
+            echo $u
             curl -sL --output pkg $u
+            ls -l pkg
             h=($(shasum -a 256 pkg))
+            echo $h
             perl -pi -e 's/url ".*?"/url "'$u'"/' $rb
             perl -pi -e 's/sha256 ".*?"/sha256 "'$h'"/' $rb
           done
