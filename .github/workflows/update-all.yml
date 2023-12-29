@@ -1,0 +1,47 @@
+on:
+  repository_dispatch:
+    types: [ new-release ]
+  workflow_dispatch:
+
+jobs:
+  update-all:
+    name: Update All Formulas
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
+      - name: Update All Formulas
+        shell: bash
+        run: |
+          declare -A map
+          map['code-crusader']='jx-ide'
+          map['code-medic']='jx-ide'
+          map['code-mill']='jx-ide'
+          map['nps-ssh-askpass']='ssh-askpass'
+          map['nps-svn-client']='subversion_client'
+          map['jx-application-framework']='jx_application_framework'
+          for rb in Formula/*; do
+            f=${rb##*/}
+            f=${f%.rb}
+            r=${map[$f]:-$f}
+            u=$(curl -sL https://api.github.com/repos/jafl/$r/releases/latest \
+              | jq -r '.assets[].browser_download_url' \
+              | grep $f \
+              | grep macos)
+            curl -sL --output pkg $url
+            h=($(shasum -a 256 pkg))
+            perl -pi -e 's/url ".*?"/url "'$u'"/' $rb
+            perl -pi -e 's/sha256 ".*?"/sha256 "'$h'"/' $rb
+          done
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update All Formulas to latest releases
+          commit_user_name: John Lindal
+          commit_user_email: github@newplanetsoftware.com
+          commit_author: John Lindal <github@newplanetsoftware.com>
