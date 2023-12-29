@@ -41,8 +41,8 @@ jobs:
             ls -l pkg
             h=($(shasum -a 256 pkg))
             echo $h
-            echo 's/url ".*?"/url "'$u'"/'
-            perl -pi -e 's/url ".*?"/url "'$u'"/' $rb
+            echo 's/url ".*?"/url "'${u//\//\\\/}'"/'
+            perl -pi -e 's/url ".*?"/url "'${u//\//\\\/}'"/' $rb
             echo 's/sha256 ".*?"/sha256 "'$h'"/'
             perl -pi -e 's/sha256 ".*?"/sha256 "'$h'"/' $rb
           done
