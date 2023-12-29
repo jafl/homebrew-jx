@@ -1,8 +1,8 @@
 class NpsSvnClient < Formula
   desc "Simple interface for performing common subversion tasks"
   homepage "https://github.com/jafl/subversion_client"
-  url "https://github.com/jafl/subversion_client/releases/download/v2.0.2/nps-svn-client_2.0.2_macos13_x86_64.tar.gz"
-  sha256 "c9cf4997c1f525f5480ae83d90f2fead426a0c6f3c73846bc2f5ed68cac2970d"
+  url "https://github.com/jafl/subversion_client/releases/download/v2.0.3/nps-svn-client_2.0.3_macos13_x86_64.tar.gz"
+  sha256 "2cefe000505d7d787b2af1f03cd0ae52f06711b30cc8c07b1779702ea18e80a7"
   license "GPL-3.0-or-later"
 
   def install
