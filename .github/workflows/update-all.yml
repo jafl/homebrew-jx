@@ -26,26 +26,20 @@ jobs:
           map['nps-svn-client']='subversion_client'
           map['jx-application-framework']='jx_application_framework'
           for rb in Formula/*; do
-            echo $rb
             f=${rb##*/}
             f=${f%.rb}
             echo $f
             r=${map[$f]:-$f}
-            echo $r
             u=$(curl -sL https://api.github.com/repos/jafl/$r/releases/latest \
               | jq -r '.assets[].browser_download_url' \
               | grep $f \
               | grep macos)
-            echo $u
             curl -sL --output pkg $u
-            ls -l pkg
             h=($(shasum -a 256 pkg))
-            echo $h
-            echo 's/url ".*?"/url "'${u//\//\\\/}'"/'
             perl -pi -e 's/url ".*?"/url "'${u//\//\\\/}'"/' $rb
-            echo 's/sha256 ".*?"/sha256 "'$h'"/'
             perl -pi -e 's/sha256 ".*?"/sha256 "'$h'"/' $rb
           done
+          rm -f pkg
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
