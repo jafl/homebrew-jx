@@ -1,8 +1,8 @@
 class CodeMill < Formula
   desc "Plug-in for Code Crusader that helps create new C++ classes"
   homepage "https://github.com/jafl/jx-ide"
-  url "https://github.com/jafl/jx-ide/releases/download/v7.1.4/code-mill_7.1.4_macos13_x86_64.tar.gz"
-  sha256 "9318eae629629f686c1e5738792c2d8381a5fe14c3973f6a6c83251a024c721a"
+  url "https://github.com/jafl/jx-ide/releases/download/v7.1.5/code-mill_7.1.5_macos13_x86_64.tar.gz"
+  sha256 "76b6b8ce7ccdff68544d3513f08b092198d0861f606e50f3bf1dd7b06b961999"
   license "GPL-3.0-or-later"
 
   depends_on "jafl/jx/code_crusader"

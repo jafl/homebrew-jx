@@ -1,8 +1,8 @@
 class CodeMedic < Formula
   desc "GUI that works with gdb, lldb, and Xdebug and integrates with Code Crusader"
   homepage "https://github.com/jafl/jx-ide"
-  url "https://github.com/jafl/jx-ide/releases/download/v7.1.4/code-medic_7.1.4_macos13_x86_64.tar.gz"
-  sha256 "4682ab0fba03fabef8807db0cc5ccb3b8fca6f59fbebb87076fe24e7cf52f30f"
+  url "https://github.com/jafl/jx-ide/releases/download/v7.1.5/code-medic_7.1.5_macos13_x86_64.tar.gz"
+  sha256 "25ca565e562994160eedfb95f35fa5afb620a843b27466b952c5b4564872500f"
   license "GPL-3.0-or-later"
 
   depends_on "jafl/jx/code_crusader" => :optional

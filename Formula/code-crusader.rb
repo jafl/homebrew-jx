@@ -1,8 +1,8 @@
 class CodeCrusader < Formula
   desc "IDE that integrates with Code Medic"
   homepage "https://github.com/jafl/jx-ide"
-  url "https://github.com/jafl/jx-ide/releases/download/v7.1.4/code-crusader_7.1.4_macos13_x86_64.tar.gz"
-  sha256 "b290959493734144a6f733510e65c53909cbd25bf7346809838f68abea681403"
+  url "https://github.com/jafl/jx-ide/releases/download/v7.1.5/code-crusader_7.1.5_macos13_x86_64.tar.gz"
+  sha256 "064facf0bba469529cabca54adf99bd22f7c2c8c06542661ba8685a446f0b72d"
   license "GPL-3.0-or-later"
 
   depends_on "jafl/jx/code_medic" => :recommended
