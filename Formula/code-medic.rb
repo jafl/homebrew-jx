@@ -5,7 +5,7 @@ class CodeMedic < Formula
   sha256 "25ca565e562994160eedfb95f35fa5afb620a843b27466b952c5b4564872500f"
   license "GPL-3.0-or-later"
 
-  depends_on "jafl/jx/code_crusader" => :optional
+  depends_on "jafl/jx/code-crusader" => :optional
 
   def install
     # We have to link to XQuartz libraries, but homebrew build environment prohibits this.

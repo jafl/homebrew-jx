@@ -5,7 +5,7 @@ class CodeMill < Formula
   sha256 "76b6b8ce7ccdff68544d3513f08b092198d0861f606e50f3bf1dd7b06b961999"
   license "GPL-3.0-or-later"
 
-  depends_on "jafl/jx/code_crusader"
+  depends_on "jafl/jx/code-crusader"
 
   def install
     # We have to link to XQuartz libraries, but homebrew build environment prohibits this.
